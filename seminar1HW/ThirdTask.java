@@ -1,41 +1,29 @@
 package seminar1HW;
 
-import java.util.StringTokenizer;
-
 public class ThirdTask{
-    public static String[] reverse(String[] words) {
-        String[] newArray = new String[words.length];
- 
-        for (int i = 0; i < words.length; i++) {
-            newArray[words.length - 1 - i] = words[i];
+    public String reverseWords(String s) {
+        if (s.equals(null) || s.equals(""))
+            return s;
+        String ret = "";
+        int i = 0;
+        int l = s.length();
+        while (i < l) {
+            while (i < l && s.charAt(i) == ' ')
+                i++;
+            String w = "";
+            while (i < l && s.charAt(i) != ' ') {
+                w += s.charAt(i);
+                i++;
+            }
+            if (!w.equals(""))
+                ret = w + " " + ret;
         }
- 
-        return newArray;
+        return ret.isEmpty()?"":ret.substring(0, ret.length()-1);
     }
-
-   public static String[] my_split(String str){
-    String delims = " ";
-    int i = 0;
-    String[] words = new String[4];
-    StringTokenizer st = new StringTokenizer(str, delims);
-    
-            while (st.hasMoreTokens())
-             {
-                 words[i] = st.nextToken();
-                 i++;
-             }
-
-             return words;
-   }
     public static void main(String[] args) {
-        String str = "the sky is blue";
-        // String[] words = str.split(" ");
-        String[] words = my_split(str);
-        words = reverse(words);
-        str = String.join(" ", words);
-        System.out.println(str);
-
-        
+        System.out.println(new ThirdTask().reverseWords("the sky is blue"));
+        System.out.println(new ThirdTask().reverseWords("  hello world  "));
+        System.out.println(new ThirdTask().reverseWords("a good   example"));
 
     }
 }
