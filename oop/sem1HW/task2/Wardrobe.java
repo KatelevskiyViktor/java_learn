@@ -8,6 +8,6 @@ public class Wardrobe {
 
     @Override
     public String toString() {       
-        return "In wardrobe is: " + Arrays.toString(this.clothes);
+        return "In wardrobe is: " + Arrays.toString(clothes);
     }
 }
