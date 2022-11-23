@@ -2,33 +2,33 @@ package oop.sem1HW.task2;
 
 public class Human {
     public String name;
-    public void openDoor(Wardrobe wardrobe){
-        if(wardrobe.door == true) 
+    public void openDoor(){
+        if(Wardrobe.door == true) 
             System.out.println("Door already open!");
         else{
-            wardrobe.door = true;
+            Wardrobe.door = true;
             System.out.println("Door open!");
         }
         
     }
-    public void closeDoor(Wardrobe wardrobe){
-        if(wardrobe.door == false) 
+    public void closeDoor(){
+        if(Wardrobe.door == false) 
             System.out.println("Door already close!");
         else{
-            wardrobe.door = false;
+            Wardrobe.door = false;
             System.out.println("Door close!");
         }
     }
 
-    public boolean putClothes(Wardrobe wardrobe, String clothe){
-        if(wardrobe.door == false){
+    public boolean putClothes( String clothe){
+        if(Wardrobe.door == false){
             System.out.println("In the beginning, you need to open the door");
             return false;
         }
 
-        for (int i = 0; i < wardrobe.clothes.length; i++) {
-            if(wardrobe.clothes[i] == null){
-                wardrobe.clothes[i] = clothe;
+        for (int i = 0; i < Wardrobe.clothes.length; i++) {
+            if(Wardrobe.clothes[i] == null){
+                Wardrobe.clothes[i] = clothe;
                 System.out.println("Сlothes are put on!");
                 return true;
             }
@@ -39,15 +39,15 @@ public class Human {
         return false;
     }
 
-    public boolean removeClothe(Wardrobe wardrobe, String clothe){
-        if(wardrobe.door == false){
+    public boolean removeClothe(String clothe){
+        if(Wardrobe.door == false){
             System.out.println("In the beginning, you need to open the door");
             return false;
         }
 
-        for (int i = 0; i < wardrobe.clothes.length; i++) {
-            if(wardrobe.clothes[i] == clothe){
-                wardrobe.clothes[i] = null;
+        for (int i = 0; i < Wardrobe.clothes.length; i++) {
+            if(Wardrobe.clothes[i] == clothe){
+                Wardrobe.clothes[i] = null;
                 System.out.println("Сlothes are put off!");
                 return true;
             }
@@ -58,13 +58,13 @@ public class Human {
         return false;
     }
 
-    public boolean watchWhatInWardrobe(Wardrobe wardrobe){
-        if(wardrobe.door == false){
+    public boolean watchWhatInWardrobe(){
+        if(Wardrobe.door == false){
             System.out.println("In the beginning, you need to open the door");
             return false;
         }
 
-        System.out.println(wardrobe.toString()); 
+        System.out.println(new Wardrobe().toString()); 
         return true;
     }
 }
