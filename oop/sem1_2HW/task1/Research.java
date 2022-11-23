@@ -1,6 +1,6 @@
-package oop.sem1HW.task1;
+package oop.sem1_2HW.task1;
 
-public class Research {
+public class Research implements Researches {
     public boolean checkerRelative(String[] arr, String name){
         if(arr != null)
             for (String s : arr)
@@ -9,6 +9,7 @@ public class Research {
         return false;
     }
 
+    @Override
     public String relativeResearcher(Human human, Human human2){
         
         if(this.checkerRelative(human.siblings, human2.name))

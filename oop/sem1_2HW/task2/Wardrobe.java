@@ -1,4 +1,4 @@
-package oop.sem1HW.task2;
+package oop.sem1_2HW.task2;
 
 import java.util.Arrays;
 

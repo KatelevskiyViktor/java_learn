@@ -1,16 +1,9 @@
-package oop.sem1HW.task2;
+package oop.sem1_2HW.task2;
 
-public class Human {
+public class Human extends HumanAct {
     public String name;
-    public void openDoor(){
-        if(Wardrobe.door == true) 
-            System.out.println("Door already open!");
-        else{
-            Wardrobe.door = true;
-            System.out.println("Door open!");
-        }
-        
-    }
+
+    @Override
     public void closeDoor(){
         if(Wardrobe.door == false) 
             System.out.println("Door already close!");

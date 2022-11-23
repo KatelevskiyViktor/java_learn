@@ -1,4 +1,4 @@
-package oop.sem1HW.task1;
+package oop.sem1_2HW.task1;
 
 public class Main {
     public static void main(String[] args) {
