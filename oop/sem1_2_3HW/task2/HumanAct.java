@@ -1,4 +1,4 @@
-package oop.sem1_2HW.task2;
+package oop.sem1_2_3HW.task2;
 
 public abstract class HumanAct {
     public void openDoor() {

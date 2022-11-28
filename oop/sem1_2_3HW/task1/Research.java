@@ -1,4 +1,4 @@
-package oop.sem1_2HW.task1;
+package oop.sem1_2_3HW.task1;
 
 public class Research implements Researches {
     public boolean checkerRelative(String[] arr, String name) {
