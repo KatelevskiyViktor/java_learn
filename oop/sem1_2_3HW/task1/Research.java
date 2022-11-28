@@ -1,5 +1,6 @@
 package oop.sem1_2_3HW.task1;
 
+
 public class Research implements Researches {
     public boolean checkerRelative(String[] arr, String name) {
         if (arr != null)
@@ -33,4 +34,8 @@ public class Research implements Researches {
 
         return human2.name + " is not relative " + human.name;
     }
+
+ 
+    
+
 }

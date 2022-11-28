@@ -23,7 +23,9 @@ public class Human extends Research{
     //         this.uncles = uncles;
     // }
 
-
+    public String showSiblings() {
+        return Arrays.toString(siblings);
+    }
     @Override
     public String toString() {
         return "Siblings: " + (this.siblings == null ? "No siblings or undefined" : Arrays.toString(this.siblings))  + 

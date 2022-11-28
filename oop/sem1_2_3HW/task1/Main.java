@@ -15,6 +15,7 @@ public class Main {
         System.out.println(viktorK.relativeResearcher(viktorK, elenaO) + "\n\n");
         System.out.println(elenaO.toString() + "\n");
         System.out.println(elenaO.relativeResearcher(elenaO, viktorK) + "\n\n");
+        
 
     }
 }
