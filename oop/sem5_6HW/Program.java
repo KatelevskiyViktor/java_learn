@@ -1,4 +1,4 @@
-package oop.sem5HW;
+package oop.sem5_6HW;
 
 public class Program {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package oop.sem5HW;
+package oop.sem5_6HW;
 
 import java.util.Scanner;
 
